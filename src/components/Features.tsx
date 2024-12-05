@@ -28,7 +28,7 @@ const Features = () => {
               <div key={feature.name} className="relative">
                 <dt>
                   <div
-                    className={`absolute flex items-center justify-center h-14 w-14 rounded-md bg-background text-tertiary border-gray border-4`}
+                    className={`absolute flex items-center justify-center h-14 w-14`}
                   >
                     <img
                       className={`inline-block h-12 w-12 rounded-full bg-red-600`}

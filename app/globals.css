@@ -28,3 +28,12 @@ a:hover {
   color: #ff5733; /* Example active color */
   font-weight: bold;
 }
+
+.custom-rounded-corner {
+  clip-path: path(
+    "M 0 0 
+     Q 100 0 100 100 
+     L 0 100 
+     Z"
+  );
+}
