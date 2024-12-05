@@ -1,6 +1,10 @@
 import React from 'react';
 
 import config from '../config/index.json';
+import { Popover, Transition } from '@headlessui/react';
+import { Link } from 'react-scroll';
+
+
 
 const MainHero = () => {
   const { mainHero } = config;
@@ -18,20 +22,31 @@ const MainHero = () => {
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a
-              href={mainHero.primaryAction.href}
+            <Link
+               spy={true}
+               activeClass="active"
+               smooth={true}
+               duration={1000}
+               key={mainHero.primaryAction.text}
+               to={mainHero.primaryAction.href}
               className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
             >
               {mainHero.primaryAction.text}
-            </a>
+            </Link>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a
+            <Link
+               spy={true}
+               activeClass="active"
+               smooth={true}
+               duration={1000}
+               key={mainHero.secondaryAction.text}
+               to={mainHero.secondaryAction.href}
               href={mainHero.secondaryAction.href}
               className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
             >
               {mainHero.secondaryAction.text}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

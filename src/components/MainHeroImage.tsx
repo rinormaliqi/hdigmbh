@@ -1,6 +1,7 @@
 import React from 'react';
 
 import config from '../config/index.json';
+import { Link } from 'react-scroll';
 
 const MainHeroImage = () => {
   const { mainHero } = config;

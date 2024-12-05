@@ -30,12 +30,14 @@ const AppComponent = () => {
       </div>
       <LazyShow>
         <>
-          <div id="features">
+          <div id="#dienstleistungen">
             <Features />
           </div>
           <Canvas />
+          <div id='#uber-uns'>
           <ImageGrid />
           <StatisticsCounter />
+          </div>
           <Canvas />
           <div id="#kontakt">
             <ContactInfo />
@@ -45,9 +47,9 @@ const AppComponent = () => {
       </LazyShow>
       <LazyShow>
         <>
-          <div id="about">
+          {/* <div id="about">
             <About />
-          </div>
+          </div> */}
         </>
       </LazyShow>
     </div>

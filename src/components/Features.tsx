@@ -8,8 +8,8 @@ const Features = () => {
   return (
     <div className={`py-12 bg-background`} id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2
+      <div className="flex flex-col items-center justify-center text-center mt-14 mb-36 lg:mt-20">
+      <h2
             className={`text-base text-primary font-semibold tracking-wide uppercase text-red-600`}
           >
             {title}
@@ -28,10 +28,10 @@ const Features = () => {
               <div key={feature.name} className="relative">
                 <dt>
                   <div
-                    className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-gray border-4`}
+                    className={`absolute flex items-center justify-center h-14 w-14 rounded-md bg-background text-tertiary border-gray border-4`}
                   >
                     <img
-                      className={`inline-block h-10 w-10 rounded-full bg-red-600`}
+                      className={`inline-block h-12 w-12 rounded-full bg-red-600`}
                       src={feature.icon}
                       alt={feature.name}
                     />

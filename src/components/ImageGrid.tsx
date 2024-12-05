@@ -11,14 +11,14 @@ function ImageGrid() {
 
   return (
     <div className="bg-gray-50 py-10">
-      <div className="lg:text-center mt-14 mb-10">
-        <h2
-          className={`text-base text-primary font-semibold tracking-wide uppercase`}
+<div className="flex flex-col items-center justify-center text-center mt-14 mb-10 lg:mt-20">
+<h2
+          className={`text-base text-primary font-semibold tracking-wide uppercase text-red-600`}
         >
           Galerie
         </h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          unserer Arbeiten
+          Unserer Arbeiten
         </p>
         <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
           im Laufe des Jahres haben wir viele Projekte abgeschlossen

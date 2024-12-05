@@ -6,15 +6,15 @@
   "navigation": [
     {
       "name": "heim",
-      "href": "heim"
+      "href": "#heim"
     },
     {
       "name": "über uns",
-      "href": "uber-uns"
+      "href": "#uber-uns"
     },
     {
       "name": "dienstleistungen",
-      "href": "Dienstleistungen"
+      "href": "#dienstleistungen"
     },
     {
       "name": "kontakt",
@@ -32,7 +32,7 @@
     "img": "/gmbh2.jpg",
     "primaryAction": {
       "text": "Hi",
-      "href": "#"
+      "href": "#kontakt"
     },
     "secondaryAction": {
       "text": "Eine E-Mail versenden",

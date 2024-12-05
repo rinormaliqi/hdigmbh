@@ -40,7 +40,7 @@ function ContactInfo() {
         </svg>
       ),
       title: 'Telefonnummer',
-      details: ['+41 76 581 37 23'],
+      details: ['+41 76 804 49 77'],
     },
     {
       icon: (
@@ -65,7 +65,22 @@ function ContactInfo() {
   ];
 
   return (
-    <div className="bg-gray-50 p-10 flex justify-center">
+    <div className='flex flex-col gap-8'>
+<div className="flex flex-col items-center justify-center text-center mt-14 mb-10 lg:mt-20">
+<h2
+            className={`text-base text-primary font-semibold tracking-wide uppercase text-red-600`}
+          >
+            Kontakt
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Information
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          Montag-Freitag: 08:00 - 22:00
+          </p>
+        </div>
+        <div className="bg-gray-50 p-10 flex justify-center">
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
         {contactDetails.map((item, index) => (
           <div
@@ -87,6 +102,8 @@ function ContactInfo() {
         ))}
       </div>
     </div>
+    </div>
+   
   );
 }
 
