@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-
-import About from '../components/About';
 import Canvas from '../components/Canvas';
 import ContactInfo from '../components/ContactInfo';
 import Features from '../components/Features';
